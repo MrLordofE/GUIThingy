@@ -40,7 +40,7 @@ local UICorner_15 = Instance.new("UICorner")
 --Properties:
 
 Exploit.Name = "Exploit"
-Exploit.Parent = game.Workspace
+Exploit.Parent = game.CoreGui
 Exploit.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Frame.Parent = Exploit
