@@ -1,0 +1,354 @@
+local Exploit = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local UIListLayout = Instance.new("UIListLayout")
+local TextLabel = Instance.new("TextLabel")
+local PlayerList = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+local Outline2 = Instance.new("Frame")
+local Outline3 = Instance.new("Frame")
+local GuiName = Instance.new("TextLabel")
+local UICorner_3 = Instance.new("UICorner")
+local Speed = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local PlayerName = Instance.new("TextBox")
+local UICorner_5 = Instance.new("UICorner")
+local SpeednJump = Instance.new("TextBox")
+local UICorner_6 = Instance.new("UICorner")
+local Outline1 = Instance.new("Frame")
+local JumpPower = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local HowToOpenAndClose = Instance.new("TextLabel")
+local UICorner_8 = Instance.new("UICorner")
+local God = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local TP = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local Close = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local Flashlight = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local MoneyDupe = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local LoadSlot = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local OpenFrame = Instance.new("Frame")
+local Open = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+
+--Properties:
+
+Exploit.Name = "Exploit"
+Exploit.Parent = game.Workspace
+Exploit.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = Exploit
+Frame.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.171490595, 0, 0.293251544, 0)
+Frame.Size = UDim2.new(0, 605, 0, 370)
+Frame.Visible = false
+
+UICorner.CornerRadius = UDim.new(0.100000001, 0)
+UICorner.Parent = Frame
+
+ScrollingFrame.Parent = Frame
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+ScrollingFrame.Position = UDim2.new(0.780165315, 0, 0.232432425, 0)
+ScrollingFrame.Size = UDim2.new(0, 125, 0, 260)
+ScrollingFrame.ScrollBarThickness = 4
+
+UIListLayout.Parent = ScrollingFrame
+UIListLayout.Padding = UDim.new(0, 5)
+
+TextLabel.Parent = UIListLayout
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.Size = UDim2.new(0, 125, 0, 43)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Player1"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 14.000
+
+PlayerList.Name = "PlayerList"
+PlayerList.Parent = Frame
+PlayerList.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+PlayerList.Position = UDim2.new(0.780165315, 0, 0.0621621609, 0)
+PlayerList.Size = UDim2.new(0, 125, 0, 50)
+PlayerList.Font = Enum.Font.SciFi
+PlayerList.Text = "Players"
+PlayerList.TextColor3 = Color3.fromRGB(255, 255, 255)
+PlayerList.TextSize = 20.000
+
+UICorner_2.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_2.Parent = PlayerList
+
+Outline2.Name = "Outline2"
+Outline2.Parent = Frame
+Outline2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Outline2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Outline2.Position = UDim2.new(0.76859504, 0, 0, 0)
+Outline2.Size = UDim2.new(0, 0, 0, 370)
+
+Outline3.Name = "Outline3"
+Outline3.Parent = Frame
+Outline3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Outline3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Outline3.Position = UDim2.new(0, 0, 0.100000001, 0)
+Outline3.Size = UDim2.new(0, 465, 0, 0)
+
+GuiName.Name = "GuiName"
+GuiName.Parent = Frame
+GuiName.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+GuiName.Position = UDim2.new(0.0528925583, 0, 0.024324324, 0)
+GuiName.Size = UDim2.new(0, 140, 0, 21)
+GuiName.Font = Enum.Font.SciFi
+GuiName.Text = "Apoc Destroyer"
+GuiName.TextColor3 = Color3.fromRGB(255, 255, 255)
+GuiName.TextSize = 20.000
+
+UICorner_3.CornerRadius = UDim.new(0, 10)
+UICorner_3.Parent = GuiName
+
+Speed.Name = "Speed"
+Speed.Parent = Frame
+Speed.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+Speed.Position = UDim2.new(0.021487603, 0, 0.399999976, 0)
+Speed.Size = UDim2.new(0, 125, 0, 40)
+Speed.Font = Enum.Font.SciFi
+Speed.Text = "Speed"
+Speed.TextColor3 = Color3.fromRGB(255, 255, 255)
+Speed.TextSize = 20.000
+
+Speed.MouseButton1Down:Connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = SpeednJump.Text
+end)
+
+UICorner_4.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_4.Parent = Speed
+
+PlayerName.Name = "PlayerName"
+PlayerName.Parent = Frame
+PlayerName.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+PlayerName.Position = UDim2.new(0.426446289, 0, 0.121621624, 0)
+PlayerName.Size = UDim2.new(0, 200, 0, 41)
+PlayerName.Font = Enum.Font.SciFi
+PlayerName.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+PlayerName.PlaceholderText = "Player Name Here"
+PlayerName.Text = ""
+PlayerName.TextColor3 = Color3.fromRGB(0, 0, 0)
+PlayerName.TextSize = 20.000
+
+PlayerName.Changed:Connect(function()
+	wait(2)
+	for i,v in pairs(game.Players:GetChildren()) do
+		if string.find(string.upper(v.Name), string.upper(PlayerName.Text)) or string.find(string.lower(v.Name), string.lower(PlayerName.Text)) then
+			if PlayerName.Text ~= "" then
+				PlayerName.Text = v.Name
+
+			end
+		end
+	end
+end)
+
+UICorner_5.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_5.Parent = PlayerName
+
+SpeednJump.Name = "SpeednJump"
+SpeednJump.Parent = Frame
+SpeednJump.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+SpeednJump.Position = UDim2.new(0.426446289, 0, 0.237837836, 0)
+SpeednJump.Size = UDim2.new(0, 200, 0, 41)
+SpeednJump.Font = Enum.Font.SciFi
+SpeednJump.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+SpeednJump.PlaceholderText = "speed/Jump Here!"
+SpeednJump.Text = ""
+SpeednJump.TextColor3 = Color3.fromRGB(0, 0, 0)
+SpeednJump.TextSize = 20.000
+
+UICorner_6.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_6.Parent = SpeednJump
+
+Outline1.Name = "Outline1"
+Outline1.Parent = Frame
+Outline1.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Outline1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Outline1.Position = UDim2.new(0, 0, 0.367567569, 0)
+Outline1.Size = UDim2.new(0, 465, 0, 0)
+
+JumpPower.Name = "JumpPower"
+JumpPower.Parent = Frame
+JumpPower.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+JumpPower.Position = UDim2.new(0.021487603, 0, 0.529729724, 0)
+JumpPower.Size = UDim2.new(0, 125, 0, 40)
+JumpPower.Font = Enum.Font.SciFi
+JumpPower.Text = "JumpPower"
+JumpPower.TextColor3 = Color3.fromRGB(255, 255, 255)
+JumpPower.TextSize = 20.000
+
+JumpPower.MouseButton1Down:Connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = SpeednJump.Text
+end)
+
+UICorner_7.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_7.Parent = JumpPower
+
+HowToOpenAndClose.Name = "HowToOpenAndClose"
+HowToOpenAndClose.Parent = Frame
+HowToOpenAndClose.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+HowToOpenAndClose.Position = UDim2.new(0.383471072, 0, 0.024324324, 0)
+HowToOpenAndClose.Size = UDim2.new(0, 203, 0, 21)
+HowToOpenAndClose.Font = Enum.Font.SciFi
+HowToOpenAndClose.Text = "[ P ] To open and close!"
+HowToOpenAndClose.TextColor3 = Color3.fromRGB(255, 255, 255)
+HowToOpenAndClose.TextSize = 20.000
+
+UICorner_8.CornerRadius = UDim.new(0, 10)
+UICorner_8.Parent = HowToOpenAndClose
+
+God.Name = "God"
+God.Parent = Frame
+God.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+God.Position = UDim2.new(0.0214876086, 0, 0.656756759, 0)
+God.Size = UDim2.new(0, 125, 0, 40)
+God.Font = Enum.Font.SciFi
+God.Text = "God"
+God.TextColor3 = Color3.fromRGB(255, 255, 255)
+God.TextSize = 20.000
+
+God.MouseButton1Down:Connect(function()
+	local lplayer = game.Players.LocalPlayer
+	lplayer.Character.Humanoid.Name = 1
+	local l = lplayer.Character["1"]:Clone()
+	l.Parent = lplayer.Character
+	l.Name = "Humanoid"
+	wait(0.1)
+	lplayer.Character["1"]:Destroy()
+	game:GetService("Workspace").CurrentCamera.CameraSubject = lplayer.Character
+	lplayer.Character.Animate.Disabled = true
+	wait(0.1)
+	lplayer.Character.Animate.Disabled = false
+	lplayer.Character.Humanoid.DisplayDistanceType = "None"
+end)
+
+UICorner_9.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_9.Parent = God
+
+TP.Name = "TP"
+TP.Parent = Frame
+TP.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+TP.Position = UDim2.new(0.0214876086, 0, 0.783783734, 0)
+TP.Size = UDim2.new(0, 125, 0, 40)
+TP.Font = Enum.Font.SciFi
+TP.Text = "TP"
+TP.TextColor3 = Color3.fromRGB(255, 255, 255)
+TP.TextSize = 20.000
+
+TP.MouseButton1Down:Connect(function()
+	local PlayerTo = PlayerName.Text
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace[PlayerTo].HumanoidRootPart.CFrame
+end)
+
+UICorner_10.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_10.Parent = TP
+
+Close.Name = "Close"
+Close.Parent = Frame
+Close.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+Close.Position = UDim2.new(0.538842916, 0, 0.783783734, 0)
+Close.Size = UDim2.new(0, 125, 0, 40)
+Close.Font = Enum.Font.SciFi
+Close.Text = "CloseGui"
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close.TextSize = 20.000
+
+Close.MouseButton1Down:Connect(function()
+	Frame.Visible = false
+end)
+
+UICorner_11.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_11.Parent = Close
+
+Flashlight.Name = "Flashlight"
+Flashlight.Parent = Frame
+Flashlight.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+Flashlight.Position = UDim2.new(0.241322324, 0, 0.399999976, 0)
+Flashlight.Size = UDim2.new(0, 125, 0, 40)
+Flashlight.Font = Enum.Font.SciFi
+Flashlight.Text = "Human Flashlight"
+Flashlight.TextColor3 = Color3.fromRGB(255, 255, 255)
+Flashlight.TextScaled = true
+Flashlight.TextSize = 20.000
+Flashlight.TextWrapped = true
+
+Flashlight.MouseButton1Down:Connect(function()
+	local character = game:GetService("Players").LocalPlayer.Character
+	local pointLight = Instance.new("PointLight")
+	pointLight.Parent = character.HumanoidRootPart
+end)
+
+UICorner_12.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_12.Parent = Flashlight
+
+MoneyDupe.Name = "MoneyDupe"
+MoneyDupe.Parent = Frame
+MoneyDupe.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+MoneyDupe.Position = UDim2.new(0.241322324, 0, 0.529729724, 0)
+MoneyDupe.Size = UDim2.new(0, 125, 0, 40)
+MoneyDupe.Font = Enum.Font.SciFi
+MoneyDupe.Text = "MoneyDupe(lt2)"
+MoneyDupe.TextColor3 = Color3.fromRGB(255, 255, 255)
+MoneyDupe.TextScaled = true
+MoneyDupe.TextSize = 20.000
+MoneyDupe.TextWrapped = true
+
+MoneyDupe.MouseButton1Down:Connect(function()
+	game.ReplicatedStorage.Transactions.ClientToServer.Donate:InvokeServer(game.Players.LocalPlayer,game.Players.LocalPlayer.leaderstats.Money.Value,1)
+end)
+
+UICorner_13.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_13.Parent = MoneyDupe
+
+LoadSlot.Name = "LoadSlot"
+LoadSlot.Parent = Frame
+LoadSlot.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+LoadSlot.Position = UDim2.new(0.241322324, 0, 0.656756759, 0)
+LoadSlot.Size = UDim2.new(0, 125, 0, 40)
+LoadSlot.Font = Enum.Font.SciFi
+LoadSlot.Text = "LoadSlot(lt2)"
+LoadSlot.TextColor3 = Color3.fromRGB(255, 255, 255)
+LoadSlot.TextScaled = true
+LoadSlot.TextSize = 20.000
+LoadSlot.TextWrapped = true
+
+LoadSlot.MouseButton1Down:Connect(function()
+	local txt = SpeednJump.Text
+	game:GetService("ReplicatedStorage").LoadSaveRequests.RequestLoad:InvokeServer(txt,game:GetService("Players").LocalPlayer)
+end)
+
+UICorner_14.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_14.Parent = LoadSlot
+
+OpenFrame.Name = "OpenFrame"
+OpenFrame.Parent = Exploit
+OpenFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OpenFrame.Position = UDim2.new(0.0173735302, 0, 0.380036533, 0)
+OpenFrame.Size = UDim2.new(0, 152, 0, 47)
+
+Open.Name = "Open"
+Open.Parent = OpenFrame
+Open.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+Open.Position = UDim2.new(0, 0, -0.00281800609, 0)
+Open.Size = UDim2.new(0, 152, 0, 48)
+Open.Font = Enum.Font.SciFi
+Open.Text = "Open"
+Open.TextColor3 = Color3.fromRGB(255, 255, 255)
+Open.TextSize = 20.000
+
+Open.MouseButton1Down:Connect(function()
+	Frame.Visible = true
+end)
+
+UICorner_15.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_15.Parent = Open
